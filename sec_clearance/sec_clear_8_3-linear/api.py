@@ -1,0 +1,1 @@
+domains = [{'name': 'sec_clear_8_3-linear', 'ipc': 'None', 'problems': [('sec_clear_8_3-linear/domain.pddl', 'sec_clear_8_3-linear/instances/prob_8_3.pddl')]}]
