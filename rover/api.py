@@ -11,7 +11,7 @@ domains = [
          ('rover/domain.pddl', 'rover/instances/pfile7.pddl'), 
          ('rover/domain.pddl', 'rover/instances/pfile8.pddl'),
          ('rover/domain.pddl', 'rover/instances/pfile9.pddl'),
-         ('rover/domain.pddl', 'rover/instances/pfile10.pddl') 
+         ('rover/domain.pddl', 'rover/instances/pfile10.pddl'),
          ('rover/domain.pddl', 'rover/instances/pfile11.pddl'),
          ('rover/domain.pddl', 'rover/instances/pfile12.pddl'), 
          ('rover/domain.pddl', 'rover/instances/pfile13.pddl'), 
