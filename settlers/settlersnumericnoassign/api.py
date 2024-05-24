@@ -1,1 +1,25 @@
-domains = [{'name': 'settlersnumericnoassign', 'ipc': 'None', 'problems': [('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile6.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile12.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile20.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile2.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile14.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile5.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile18.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile1.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile8.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile16.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile19.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile17.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile4.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile7.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile11.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile3.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile9.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile15.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile13.pddl'), ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile10.pddl')]}]
+domains = [{
+    'name': 'settlersnumericnoassign', 
+    'ipc': 'None', 
+    'problems': [
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile1.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile2.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile3.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile4.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile5.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile6.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile7.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile8.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile9.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile10.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile11.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile12.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile13.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile14.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile15.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile16.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile17.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile18.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile19.pddl'),
+        ('settlersnumericnoassign/domain.pddl', 'settlersnumericnoassign/instances/pfile20.pddl')
+        ]}]

@@ -1,1 +1,25 @@
-domains = [{'name': 'sugar', 'ipc': 'None', 'problems': [('sugar/domain.pddl', 'sugar/instances/pfile02.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile12.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile20.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile14.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile18.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile09.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile01.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile16.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile08.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile04.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile07.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile19.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile17.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile03.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile11.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile15.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile13.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile05.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile10.pddl'), ('sugar/domain.pddl', 'sugar/instances/pfile06.pddl')]}]
+domains = [{
+    'name': 'sugar', 
+    'ipc': 'None', 
+    'problems': [
+        ('sugar/domain.pddl', 'sugar/instances/pfile01.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile02.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile03.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile04.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile05.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile06.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile07.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile08.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile09.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile10.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile11.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile12.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile13.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile14.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile15.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile16.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile17.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile18.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile19.pddl'), 
+        ('sugar/domain.pddl', 'sugar/instances/pfile20.pddl')
+        ]}]
