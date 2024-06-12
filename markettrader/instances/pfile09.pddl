@@ -138,8 +138,6 @@
         (at camel0       Berlin)
         (= (cash) 100)
         (= (capacity) 20)
-        (= (fuel-used) 0)
-	(= (fuel) 7.0)
 )
 (:goal (and
         (>= (cash) 1000)

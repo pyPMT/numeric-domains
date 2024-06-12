@@ -20,6 +20,8 @@
 	    (bought ?g - goods)
 	    (cash)
 	    (capacity)
+		(fuel)
+		(fuel-used)
 )
 
 (:action travel
