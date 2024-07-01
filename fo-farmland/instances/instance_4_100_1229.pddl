@@ -7,7 +7,7 @@
 	)
   (:init
 
-                (= (num-of-cars) 0)
+        (= (num-of-cars) 0)
 		(= (x farm0) 100)
 		(= (x farm1) 1)
 		(= (x farm2) 0)
@@ -29,10 +29,9 @@
 			(>= (x farm0) 1)
 			(>= (x farm1) 1)
 			(>= (x farm2) 1)
-			(>= (x farm3) 1))
-			
+			(>= (x farm3) 1)
 			(>= (- (+ (* 1.0 (x farm0))(+ (* 1.7 (x farm1))(+ (* 1.3 (x farm2))(+ (* 1.1 (x farm3)) 0)))) (cost)) 140.0)		)
-	)
-)
+))
+
 
 

@@ -16,6 +16,7 @@
 	(= (carrying) 0)
 	(= (total_poured) 0)
 	(= (total_loaded) 0)
+	(= (total-cost) 0)
 	(= (poured plant1) 0)
 	(= (poured plant2) 0)
 	(= (poured plant3) 0)
