@@ -73,6 +73,28 @@ minecraft-sword-advanced [SNP, Unit]
 
 mprime [SNP, Unit]
 
+nlnp-fo-farmland [NLNP, Unit]
+  - NLNP: `(* (num-of-cars) (fuel-price))` — transport cost depends on fleet size × dynamic fuel price; both fluents change during planning
+
+nlnp-fo-sailing [NLNP, Unit]
+  - NLNP: `(* (v ?b) (v ?b))` — fuel consumption proportional to velocity squared (hydrodynamic drag)
+
+nlnp-hydropower [NLNP, Constant]
+  - NLNP: `(* (stored_units) (turbine_wear))` — pumping overhead depends on reservoir level × turbine degradation; both are dynamic
+  - Constant: metric tracks `funds`; base cost uses `value` which is static, but the NLNP overhead term uses two dynamic fluents
+
+nlnp-rover [NLNP, Constant]
+  - NLNP: `(* (wear ?r) (load ?r))` — navigation energy depends on mechanical wear × carried sample load; both accumulate during planning
+  - Constant: metric tracks `energy`; base action costs are literals, but navigate cost is non-linear
+
+nlnp-settlers [NLNP, Constant]
+  - NLNP: `(* (available ore ?p) (available coal ?p))` — smelting pollution scales with stockpile sizes of both ore and coal; both are dynamic
+  - Constant: metric tracks `labour`, `pollution`, `resource-use`; literal action costs plus non-linear pollution from make-iron
+
+nlnp-sugar [NLNP, Constant]
+  - NLNP: `(* (wear ?m) (has-resource ?r ?m))` — mill processing overhead depends on machine wear × current resource stockpile; both are dynamic
+  - Constant: metric tracks `mill-cost`, `inventory-cost`, `handling-cost`; base costs use static `cost-process`, but production adds non-linear overhead
+
 pancake [LNP, Unit]
   - LNP: assigns fluent to fluent `(assign (pancake_0) (pancake_1))`
 
