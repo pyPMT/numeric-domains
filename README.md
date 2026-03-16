@@ -4,7 +4,7 @@
 
 [SNP] Simple Numeric Planning domains only use increase and decrease with constants, and have linear conditions.
 [LNP] Linear Numeric Planning domains add the possibility of using linear combinations of variables on the effects and also the assign operation.
-[NLP] Non-Linear Numeric Planning domains use multiplication or division of fluent variables (e.g., `(* fluent fluent)` or `(/ fluent fluent)`).
+[NLNP] Non-Linear Numeric Planning domains use multiplication or division of fluent variables (e.g., `(* fluent fluent)` or `(/ fluent fluent)`).
 [SDAC] State-Dependant Action Costs are domains where the cost of the actions depend on the state they are executed in (cost expression references dynamic fluent functions that change during planning).
 [Unit] Unit cost domains where all actions have a cost of 1 or no explicit cost metric.
 [Constant] Constant cost domains where actions have different fixed numeric costs (including costs expressed via static fluent references that never change).
@@ -28,7 +28,7 @@ depots [LNP, Constant]
   - Constant: metric tracks `fuel-cost`; actions increase it by literal 1 or 10
 
 driverlog [NLP, SDAC]
-  - NLP: `(* (fuel_per_minute ?truck) (time_to_drive ?loc_from ?loc_to))` — fluent * fluent
+  - NLNP: `(* (fuel_per_minute ?truck) (time_to_drive ?loc_from ?loc_to))` — fluent * fluent
   - SDAC: metric tracks `fuel_used`; `fuel_per_minute` used in cost expression is dynamic (changes with load/unload)
 
 drone [LNP, Unit]
@@ -42,8 +42,8 @@ expedition [SNP, Unit]
 
 ext-plant-watering [SNP, Unit]
 
-factory-robot [NLP]
-  - NLP: `(>= (energy ?r) (* (workload ?r) (efficiency ?r)))` in precondition — workload is dynamic, efficiency is static
+factory-robot [NLNP]
+  - NLNP: `(>= (energy ?r) (* (workload ?r) (efficiency ?r)))` in precondition — workload is dynamic, efficiency is static
 
 farmland [SNP, Constant]
   - Constant: metric tracks `cost`; move-fast increases it by 1, move-slow by 0
@@ -123,19 +123,19 @@ sugar [LNP, Constant]
   - Constant: metric tracks `mill-cost`, `inventory-cost`, `handling-cost`; the amounts use `cost-process`, `max-produce`, `capacity`, `max-service-time` which are all static (never modified)
 
 tpp [NLP, SDAC]
-  - NLP: `(* (- (request ?g) (bought ?g)) (price ?g ?m))` — fluent * fluent
+  - NLNP: `(* (- (request ?g) (bought ?g)) (price ?g ?m))` — fluent * fluent
   - SDAC: metric is `total-cost`; `bought` and `on-sale` used in cost expression are dynamic (change during planning)
 
 tpp-metric [NLP, SDAC]
-  - NLP: `(* (- (request ?g) (bought ?g)) (price ?g ?m))` — fluent * fluent
+  - NLNP: `(* (- (request ?g) (bought ?g)) (price ?g ?m))` — fluent * fluent
   - SDAC: metric is `total-cost`; `bought` and `on-sale` used in cost expression are dynamic (change during planning)
 
 worksworld [NLP, Constant]
-  - NLP: `(* (msg_size ?dct) (msg_max_rate ?dc))`, `(/ (work_amount ?wc ?rtwc) (resource_total ?it ?rtwc))`
+  - NLNP: `(* (msg_size ?dct) (msg_max_rate ?dc))`, `(/ (work_amount ?wc ?rtwc) (resource_total ?it ?rtwc))`
   - Constant: metric is `total-cost`; all fluents in its cost expressions (`work-cost-weight`, `work_amount`, `resource_total`, `msg_size`, `msg_max_rate`) are static (never modified)
 
 zenotravel [NLP, Constant]
-  - NLP: `(* (distance ?c1 ?c2) (slow-burn ?a))` — fluent * fluent
+  - NLNP: `(* (distance ?c1 ?c2) (slow-burn ?a))` — fluent * fluent
   - Constant: metric tracks `total-fuel-used`; the amounts use `distance`, `slow-burn`, `fast-burn` which are all static (never modified)
 
 
