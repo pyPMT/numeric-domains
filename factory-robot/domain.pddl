@@ -1,4 +1,6 @@
 ;; Factory Robot Domain
+;; -------------------- 
+;; Authored by Joan Espasa Arxer
 ;;
 ;; A team of robots works in a factory with specialized stations. Each robot
 ;; has an energy reserve, accumulates workload (completed tasks), generates
